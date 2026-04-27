@@ -14,3 +14,11 @@ void main() {
   print("Minimum Number is : ${findMin(numbers)}");
   print("Average is : ${fiAverage(numbers)}");
 }
+
+int findMax(List<int> list) {
+  int max = list[0];
+  for (int i = 1; i < list.length; i++) {
+    if (list[i] > max) max = list[i];
+  }
+  return max;
+}
