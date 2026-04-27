@@ -30,3 +30,12 @@ int findMin(List<int> list) {
   }
   return min;
 }
+
+double findAverage(List<int> list) {
+  int sum = 0;
+  for (int num in list) {
+    sum += num;
+  }
+
+  return sum / list.length;
+}
